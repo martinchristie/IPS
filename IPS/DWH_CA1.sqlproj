@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>IPS</Name>
+    <Name>DWH_CA1</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{c955f8b5-142f-4cbe-b65b-81f5482777b5}</ProjectGuid>
@@ -25,6 +25,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetDatabase>DWH_CA1</TargetDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -64,12 +65,26 @@
     <Folder Include="Stg\" />
     <Folder Include="Stg\Tables\" />
     <Folder Include="Security\" />
+    <Folder Include="twitter" />
+    <Folder Include="etl" />
+    <Folder Include="etl\Tables" />
+    <Folder Include="quandl" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\test.sql" />
-    <Build Include="Stg\Tables\test.sql" />
     <Build Include="Security\etl_login.sql" />
-    <Build Include="Security\Stg.sql" />
+    <Build Include="Security\stg.sql" />
     <Build Include="etl_login.sql" />
+    <Build Include="Stg\Tables\twitter_feed.sql" />
+    <Build Include="Security\etl.sql" />
+    <Build Include="Security\twitter.sql" />
+    <Build Include="etl\Tables\batch.sql" />
+    <Build Include="etl\Tables\batch_log.sql" />
+    <Build Include="Security\quandl.sql" />
+    <Build Include="quandl\rates.sql" />
+    <Build Include="Stg\Tables\quandl_rate_feed.sql" />
+    <Build Include="twitter\twitter_feed.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="IPS.refactorlog" />
   </ItemGroup>
 </Project>

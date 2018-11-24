@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IPS", "IPS\IPS.sqlproj", "{C955F8B5-142F-4CBE-B65B-81F5482777B5}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DWH_CA1", "IPS\DWH_CA1.sqlproj", "{C955F8B5-142F-4CBE-B65B-81F5482777B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
