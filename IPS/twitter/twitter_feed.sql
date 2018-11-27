@@ -7,5 +7,7 @@
     [created_datetime] datetime,
     [retweet] int,
     [location] varchar(1024),
+	[county] varchar(50),
+	[country] varchar (50),
 	[load_etl_bath_key] int
 )
